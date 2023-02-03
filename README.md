@@ -4,7 +4,7 @@
 https://packagist.org/packages/phpmailer/phpmailer
 ## How to install
 - clone this project
-- install vendor laravel
+- install vendor
 ```bash
 composer install
 ```
@@ -22,5 +22,5 @@ composer install
     'name' => 'WebForMyself',
     'is_html' => true,
    
-    ```
+  
 
