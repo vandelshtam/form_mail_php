@@ -21,5 +21,6 @@ composer install
     'from' => 'your_email@gmail.com',
     'name' => 'WebForMyself',
     'is_html' => true,
+   
     ```
 
