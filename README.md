@@ -8,27 +8,18 @@ https://packagist.org/packages/phpmailer/phpmailer
 ```bash
 composer install
 ```
-- build manifest
-```bash
-npm run build
-```
-## Run project
-- start server
-```bash
-php artisan server
-```
-
-## Login with command string
-- enter command
-```bash
-php artisan login:user "email" "password"
-```
 ## NOTE
-- Default  user : <br>
+- Write the settings of your mail service to the configuration file  conf.phph in section $mail_settings_prod or $mail_settings_dev: <br>
 ```php
-user20@gmail.com
-```
-- Default Password user : <br>
-```php
-1234567890
-```
+ 'host' => 'smtp.gmail.com',
+    'auth' => true,
+    'port' => 465, // 587
+    'username' => 'your_email@gmail.com',
+    'password' => 'your_password',
+    'secure' => 'ssl', // tls
+    'charset' => 'UTF-8',
+    'from' => 'your_email@gmail.com',
+    'name' => 'WebForMyself',
+    'is_html' => true,
+    ```
+
